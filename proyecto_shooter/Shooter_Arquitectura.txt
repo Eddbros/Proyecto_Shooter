@@ -1,0 +1,39 @@
+Enemy:
+int vida;
+int RangoVision;
+int Velocidad;
+Vector3 distanciaAlJugador;
+ public GameObject[] Points;
+
+
+Shoot:
+    public int gunDamage; 
+    public float FireRate; 
+    public float weapointRange; 
+    public float hitForce; 
+    public int contadorbalas; 
+    public int MunMax; 
+    int resta; 
+    bool disparar = true;
+    public Transform gunEnd; 
+    private WaitForSeconds TiempoDeRecarga; 
+    public GameObject text; 
+    private float nexFire;  
+    void Start() 
+    void Update()
+    IEnumerator Recargar()
+    IEnumerator Destruir()
+
+
+ShootMetralleta: Shot;
+ShootEscopeta: Shot;
+ShootSniper: Shot;
+
+
+EnemyCortoAlcance: Enemy;
+EnemyMedioAlcance: Enemy;
+EnemyLargoAlcance: Enemy;
+
+Personaje:
+float Velocidad;
+int Vida;
